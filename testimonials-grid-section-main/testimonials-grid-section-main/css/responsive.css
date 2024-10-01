@@ -1,0 +1,9 @@
+@media(min-width: 860px){
+    h2{font-size:1.5rem}}
+    
+
+@media(min-width: 860px){.testimonial-grid{grid-auto-rows:1fr;grid-template-areas:"a a b" "c d d" "e e e"}}
+
+@media(min-width: 1240px){
+.testimonial-grid{grid-template-areas:"a a b e" "c d d e"}
+}
