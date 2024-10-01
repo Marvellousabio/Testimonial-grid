@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{--clr-text-dark-grey: #48556a;--clr-text-grey: #CFCFCF;--clr-text-light-grey: #ecf2f8;--clr-container-color-purple: #733fc8;--clr-container-color-grey: #48556a;--clr-container-color-white: #ffffff;--clr-container-color-black: #19202d;--clr-background: #ecf2f8;--clr-white: #ffffff;--clr-black: #000000}
+body{
+    display:grid;
+    margin:4.5rem 0;
+    background-color:#ecf2f8;
+    min-height:100vh;
+    
+}
+body>*{place-self:center}
+
+p{text-wrap:pretty}
+img,picture{max-width:100%;display:block}
+textarea:not([rows]){min-height:10em}
+.head{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.testimonial{
+    padding:2rem;position:relative;z-index:1;border-radius:.5rem;box-shadow:40px 60px 50px -47px rgba(72,85,106,.25)
+}
+.testimonial__background-icon{
+    position:absolute;z-index:-1;right:5rem
+}
+.testimonial__author{
+    display:flex;gap:1rem;margin-bottom:1rem;align-items:center
+}
+.testimonial__author-image{
+    border-radius:10rem;
+    -webkit-border-radius:10rem;
+    -moz-border-radius:10rem;
+    -ms-border-radius:10rem;
+    -o-border-radius:10rem;
+}
+.testimonial__name{
+    margin-bottom:.25rem
+}
+.testimonial__status{
+    font-size:14px;opacity:.5
+}
+.testimonial__text-area{
+    display:grid;gap:1rem
+}
+.testimonial__statement{
+    opacity:.7
+}
+p{font-size:1rem;font-weight:500;line-height:1.4}
+.text-white{color:var(--clr-white)}
+.text-dark-grey{color:var(--clr-text-dark-grey)}
+.text-grey{color:var(--clr-text-grey)}
+.text-light-grey{color:var(--clr-text-light-grey)}
+.container-purple{background-color:var(--clr-container-color-purple)}
+.container-grey{background-color:var(--clr-container-color-grey)}
+.container-black{background-color:var(--clr-container-color-black)}
+.container-white{background-color:var(--clr-container-color-white)}
+.testimonial-grid{
+    grid-template-areas: 'a' 'b' 'c' 'd' 'e';display:grid;grid-gap:1.5rem;grid-auto-columns:1fr;width:min(90%,87.5rem)
+}
+.testimonial-grid>:nth-child(1){grid-area:a}
+.testimonial-grid>:nth-child(2){grid-area:b}
+.testimonial-grid>:nth-child(3){grid-area:c}
+.testimonial-grid>:nth-child(4){grid-area:d}
+.testimonial-grid>:nth-child(5){grid-area:e}
